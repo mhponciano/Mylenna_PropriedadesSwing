@@ -1,0 +1,27 @@
+// Source code is decompiled from a .class file using FernFlower decompiler.
+import java.awt.Color;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.JSplitPane;
+
+public class exercicio6 {
+   public exercicio6() {
+   }
+
+   public static void main(String[] var0) {
+      JFrame var1 = new JFrame("Exercício 6");
+      var1.setDefaultCloseOperation(3);
+      var1.setSize(600, 400);
+      JPanel var2 = new JPanel();
+      var2.setBackground(Color.RED);
+      var2.add(new JLabel("Esquerda"));
+      JPanel var3 = new JPanel();
+      var3.setBackground(Color.BLUE);
+      var3.add(new JLabel("Direita"));
+      JSplitPane var4 = new JSplitPane(1, var2, var3);
+      var4.setDividerLocation(0.4);
+      var1.add(var4);
+      var1.setVisible(true);
+   }
+}
